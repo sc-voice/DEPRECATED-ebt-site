@@ -1,7 +1,10 @@
 <template>
   <v-app >
     <v-app-bar dark :clipped-left="clipped" fixed app hide-on-scroll flat >
-      <scv-app-bar title="EBT-Site" imgUrl="chris-petrow-j4Wia6JDLm0-unsplash.png">
+      <scv-app-bar title="Scv-Static" imgUrl="amanda-flavell-buddha.png">
+        <v-btn icon to="/components" class="scv-icon-btn" >
+          <menu-icon class="scv-settings-icon"/>
+        </v-btn>
       </scv-app-bar>
     </v-app-bar>
     <div class="site-main">
@@ -18,7 +21,7 @@
 <script>
 import Vue from 'vue';
 const { version } = require('~/package.json');
-import { ScvVue } from '@sc-voice/scv-static';
+import { ScvVue } from '../index';
 let {
   ScvAppBar,
   ScvCursor,
