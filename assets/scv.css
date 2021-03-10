@@ -539,6 +539,18 @@ summary:focus {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
+.nuxt-content table {
+  border-collapse: collapse;
+}
+.nuxt-content thead th {
+  border-bottom: 1pt solid #888;
+}
+.nuxt-content th {
+  padding: 0.25em;
+}
+.nuxt-content td {
+  padding: 0.25em;
+}
 .scv-toc {
   margin: 1em;
 }

@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+
+const axios = require('axios');
+const FORKSURL="https://api.github.com/repos/sc-voice/ebt-site/forks"
+const { logger } = require('log-instance');
+
+(async function() { try {
+  let res = await axios.get(FORKSURL);
+  let forks = res.data;
+  forks.forEach(fork=>{
+    let { name, owner } = fork;
+    let url = `https://${owner.login}.github.io/${name}`;
+    console.log({
+      name,
+      owner:owner.login,
+      url,
+    });
+  });
+} catch(e) {
+  logger.error(e);
+  throw e;
+}})();

@@ -1,10 +1,6 @@
 #!/bin/bash
 
-GROUP=$1
-if [ "$GROUP" == "" ]; then
-  echo -e "WIKI\t: expected group name (ERROR)"
-  exit -1
-fi
+GROUP=images
 
 echo -e "WIKI\t: creating $SLUGFILE"
 mkdir -p pages/$GROUP
@@ -35,22 +31,13 @@ cat > content/wiki/$GROUP.md << MDGROUP
 ---
 title: $GROUP title
 description: $GROUP description
-img: candle.png
+img: benjamin-balazs-xtiGzOiJe1Q-unsplash.png
 img-alt: Generic image for $GROUP 
 slugDir: $GROUP
 order: 9999
 ---
-### Welcome to $GROUP!
-This is the main
-page for the wiki group "$GROUP".
-
-To change this file, edit <code>content/wiki/$GROUP.md</code>.
-This file is a [Markdown](https://www.markdownguide.org/basic-syntax) file.
-
 ### Wiki/$GROUP Contents
-The pages in your new group are shown below.
-We've created an Example page for you.
-
+Images used on this site
 MDGROUP
 fi # GROUP.md
 
@@ -85,3 +72,28 @@ order: The display order of this page in the group. Pages with the same number a
 Everything below the YAML header is 
 [Markdown](https://www.markdownguide.org/basic-syntax).
 MDEXAMPLE
+
+SITEURL=`scripts/site-url`
+
+for IMG in `ls static/*.png`
+do 
+  IMGNAME=`basename $IMG | sed s/.png//`
+  PAGE=$IMGNAME.md
+  echo -e "WIKI\t: creating content/$GROUP/$PAGE"
+  cat > content/$GROUP/$PAGE << MDIMAGE
+---
+title: $IMGNAME
+description: Site image
+img: $IMGNAME.png
+img-alt: Picture $IMGNAME.png
+---
+
+  | Image | Location |
+  | :----- | :----- |
+  | URL | <code><a href="$SITEURL/$IMGNAME.png" target="_blank">$SITEURL/$IMGNAME.png</a></code> |
+  | Wiki | <code>content/images/$IMGNAME.md</code> |
+  | File | <code>static/$IMGNAME.png</code> |
+  | Source | (click on image to see source) |
+
+MDIMAGE
+done
