@@ -17,6 +17,7 @@ fi
 export BABEL_ENV=deploy
 npm run version:nuxt
 npm run generate 2>&1
+scripts/wiki-images
 git commit -am "nuxt-routes"
 
 npm run deploy:branch &&\
