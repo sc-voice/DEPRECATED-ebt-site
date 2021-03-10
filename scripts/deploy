@@ -15,9 +15,9 @@ else
 fi
 
 export BABEL_ENV=deploy
+scripts/wiki-images
 npm run version:nuxt
 npm run generate 2>&1
-scripts/wiki-images
 git add content
 git commit -am "nuxt-routes"
 
