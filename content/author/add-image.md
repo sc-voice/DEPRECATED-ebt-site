@@ -44,7 +44,7 @@ Add an image file using Github:
 1. Navigate to the <code>static</code> folder
 1. Click <kbd>Add File</kbd> to add your new image.
 
-<p><img src="/github-add-image.png" width=600px/></p>
+<p><img src="../github-add-image.png" width=600px/></p>
 
 ### Step 4. Use the Image
 Although you can just use markdown to include an image,
