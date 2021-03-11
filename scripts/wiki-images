@@ -5,23 +5,24 @@ GROUP=images
 echo -e "WIKI\t: creating $SLUGFILE"
 mkdir -p pages/$GROUP
 SLUGFILE=pages/$GROUP/_slug.vue 
-cat > $SLUGFILE << SLUG
-<template>
-  <scv-article :article="article">
-    <nuxt-content :document="article" />
-  </scv-article>
-</template>
-<script>
-  import { ScvVue } from '@sc-voice/scv-static';
-  const { ScvArticle } = ScvVue;
-  export default {
-    async asyncData({ \$content, params }) {
-      const article = await \$content('$GROUP', params.slug).fetch()
-      return { article }
-    },
-    components: { ScvArticle, },
-  }
-</script>
+cat > $SLUGFILE <<- SLUG
+  <template>
+    <scv-article :article="article">
+      <nuxt-content :document="article" />
+      <scv-image-info :article="article" />
+    </scv-article>
+  </template>
+  <script>
+    import { ScvVue } from '@sc-voice/scv-static';
+    const { ScvArticle, ScvImageInfo } = ScvVue;
+    export default {
+      async asyncData({ \$content, params }) {
+        const article = await \$content('images', params.slug).fetch()
+        return { article }
+      },
+      components: { ScvArticle, ScvImageInfo, },
+    }
+  </script>
 SLUG
 
 echo -e "WIKI\t: creating content/$GROUP"
@@ -58,12 +59,7 @@ img: $IMGNAME.png
 img-alt: Picture $IMGNAME.png
 ---
 
-  | Image | Location |
-  | :----- | :----- |
-  | URL | <code><a href="$SITEURL/$IMGNAME.png" target="_blank">$SITEURL/$IMGNAME.png</a></code> |
-  | Wiki | <code>content/images/$IMGNAME.md</code> |
-  | File | <code>static/$IMGNAME.png</code> |
-  | Source | (click on image to see source) |
+_Do not edit this wiki page. It is generated automatically._ 
 
 MDIMAGE
 done

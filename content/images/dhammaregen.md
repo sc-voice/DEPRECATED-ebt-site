@@ -5,10 +5,5 @@ img: dhammaregen.png
 img-alt: Picture dhammaregen.png
 ---
 
-  | Image | Location |
-  | :----- | :----- |
-  | URL | <code><a href="https://.github.io/ebt-site/dhammaregen.png" target="_blank">https://.github.io/ebt-site/dhammaregen.png</a></code> |
-  | Wiki | <code>content/images/dhammaregen.md</code> |
-  | File | <code>static/dhammaregen.png</code> |
-  | Source | (click on image to see source) |
+_Do not edit this wiki page. It is generated automatically._ 
 

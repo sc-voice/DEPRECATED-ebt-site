@@ -5,10 +5,5 @@ img: markus-winkler-aId-xYRTlEc-unsplash.png
 img-alt: Picture markus-winkler-aId-xYRTlEc-unsplash.png
 ---
 
-  | Image | Location |
-  | :----- | :----- |
-  | URL | <code><a href="https://.github.io/ebt-site/markus-winkler-aId-xYRTlEc-unsplash.png" target="_blank">https://.github.io/ebt-site/markus-winkler-aId-xYRTlEc-unsplash.png</a></code> |
-  | Wiki | <code>content/images/markus-winkler-aId-xYRTlEc-unsplash.md</code> |
-  | File | <code>static/markus-winkler-aId-xYRTlEc-unsplash.png</code> |
-  | Source | (click on image to see source) |
+_Do not edit this wiki page. It is generated automatically._ 
 

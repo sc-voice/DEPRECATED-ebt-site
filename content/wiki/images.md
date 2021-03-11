@@ -6,5 +6,7 @@ img-alt: Generic image for images
 slugDir: images
 order: 9999
 ---
+
 ### Wiki/images Contents
-Images used on this site
+Here are the images used on this site.
+Click [Add Image](./author/add-image) for more information.
