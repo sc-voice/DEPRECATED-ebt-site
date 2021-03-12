@@ -3,6 +3,7 @@
 DIR=`dirname $0`
 
 npm install --save @sc-voice/scv-static@latest
+npm install --save scv-bilara@latest
 
 $DIR/git-commit-version PUSH &&\
 $DIR/deploy
