@@ -3,7 +3,7 @@ title: Customize Website
 description: Change your EBT website language, etc.
 img: faizan-saeed-PPeZwFWnWNE-unsplash.png
 alt: Generic picture of bespoke
-order: 1
+order: 2
 ---
 
 EBT websites are customized with `ebt-site.yaml` configuration file
