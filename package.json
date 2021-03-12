@@ -1,6 +1,6 @@
 {
   "name": "@sc-voice/ebt-site",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -22,14 +22,14 @@
     "push-dir": "^0.4.1"
   },
   "devDependencies": {
-    "nuxt": "^2.14.12",
     "@nuxt/content": "^1.14.0",
     "@nuxtjs/vuetify": "^1.11.3",
     "@vue/test-utils": "^1.1.2",
-    "scv-bilara": "^1.9.2",
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "^26.6.3",
     "jest": "^26.6.3",
+    "nuxt": "^2.14.12",
+    "scv-bilara": "^1.9.5",
     "vue-jest": "^3.0.4"
   }
 }
