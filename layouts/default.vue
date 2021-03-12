@@ -1,7 +1,11 @@
 <template>
   <v-app >
     <v-app-bar dark :clipped-left="clipped" fixed app hide-on-scroll flat >
-      <scv-app-bar title="EBT-Site" imgUrl="chris-petrow-j4Wia6JDLm0-unsplash.png">
+      <scv-app-bar 
+        title="EBT-Site" 
+        imgUrl="chris-petrow-j4Wia6JDLm0-unsplash.png"
+        :monolingual="ebtLang"
+        >
       </scv-app-bar>
     </v-app-bar>
     <div class="site-main">
@@ -34,11 +38,19 @@ export default {
       clipped: false,
     }
   },
+  mounted() {
+    console.log('layouts/default mounted', 
+        this.$nuxt,
+    );
+  },
   methods: {
   },
   computed: {
     version() {
       return version;
+    },
+    ebtLang() {
+        return this.$nuxt.context.env.ebt_lang;
     },
   },
 }

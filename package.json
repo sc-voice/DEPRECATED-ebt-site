@@ -1,11 +1,12 @@
 {
   "name": "@sc-voice/ebt-site",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "private": true,
   "scripts": {
     "dev": "nuxt",
     "build": "scripts/build",
     "build:nuxt": "nuxt build",
+    "build:nuxt-config": "scripts/build-nuxt-config",
     "start": "nuxt start",
     "generate": "scripts/nuxt-routes.js && nuxt generate",
     "generate:deploy": "export BABEL_ENV=deploy; scripts/nuxt-routes.js && nuxt generate",
@@ -16,7 +17,7 @@
   },
   "dependencies": {
     "@mdi/js": "^5.9.55",
-    "@sc-voice/scv-static": "^0.4.54",
+    "@sc-voice/scv-static": "^0.4.56",
     "axios": "^0.21.1",
     "core-js": "^3.8.3",
     "push-dir": "^0.4.1"
