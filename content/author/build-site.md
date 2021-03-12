@@ -57,4 +57,7 @@ Eventually you will see a green box:
 
 Click on the link in the green box to view your new EBT website.
 
-Now you can [rename your website](/author/rename-website)
+What's next?
+
+* [rename your website](/author/rename-website)
+* [customize your website](/author/customize-website)
