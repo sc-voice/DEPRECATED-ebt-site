@@ -492,6 +492,9 @@ summary:focus {
   height: 175px;
   border-top-left-radius: 0.5em;
 }
+.nuxt-content {
+  max-width: 50em;
+}
 .nuxt-content a {
   color: var(--scv-color-light) !important;
   font-weight: 700;
@@ -580,4 +583,9 @@ summary:focus {
 .scv-article-link a {
   font-size: 18px;
   font-weight: 400;
+}
+.site-content {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }

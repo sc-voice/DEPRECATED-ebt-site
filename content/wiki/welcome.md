@@ -22,4 +22,4 @@ linked Buddhist websites hosted on Github.
 ### Take a Tour
 
 * [Search the suttas](/suttas) to study what the Buddha said.
-* [Create your own EBT site](/wiki/author)!
+* [Create your own EBT site](/author/build-site)!

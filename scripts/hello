@@ -1,2 +1,4 @@
-#!/usr/bin/env node
-console.log('hello', new Date());
+#!/bin/bash
+
+DIR=`pwd`
+echo `basename $DIR`
