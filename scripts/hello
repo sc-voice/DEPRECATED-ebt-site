@@ -2,3 +2,5 @@
 
 DIR=`pwd`
 echo `basename $DIR`
+
+echo HELLO

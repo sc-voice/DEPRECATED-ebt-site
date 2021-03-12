@@ -8,4 +8,3 @@ order: 1
 ---
 
 Here's the latest news.
-Scroll down for older news.
