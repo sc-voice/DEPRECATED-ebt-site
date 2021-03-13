@@ -57,6 +57,8 @@
 	"wiki/create-wiki-page",
 	"_content/rename-website",
 	"author/rename-website",
+	"_content/customize-website",
+	"author/customize-website",
 	"_content/build-site",
 	"author/build-site",
 	"_content/add-image",

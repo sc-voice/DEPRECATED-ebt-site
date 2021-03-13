@@ -39,7 +39,7 @@ Click the `Actions` tab in the top-center of your web page to see what's
 happening. After about 5 minutes, you'll see that the initial commit 
 has been built.
 
-![Initial Commit](/initial-commit.png)
+![Initial Commit](./initial-commit.png)
 
 ### Step 4. Enable Github Pages
 Your EBT website will be a (Github Page](https://pages.github.com/).
@@ -53,7 +53,7 @@ Let's make it.
 It takes a while to build an EBT site. 
 Eventually you will see a green box:
 
-![site-published](/site-published.png)
+![site-published](./site-published.png)
 
 Click on the link in the green box to view your new EBT website.
 
