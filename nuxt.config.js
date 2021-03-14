@@ -1,34 +1,39 @@
 import yaml from 'js-yaml';
 import fs from 'fs';
 const EBT_SITE_YAML = yaml.safeLoadAll(fs.readFileSync('./ebt-site.yaml'))[0] || {};
-const REPO_NAME = __dirname.split('/').pop()
+const { logger } = require('log-instance');
 
 import NuxtConfig from '@sc-voice/scv-static/nuxt.config';
 let CONFIG = JSON.parse(JSON.stringify(NuxtConfig));
-
-console.log(`nuxt.config.js`,{ 
-    REPO_NAME,
-    EBT_SITE_YAML,
-});
+let {
+    account: ebt_account,
+    repository: ebt_repository,
+} = require('./ebt-repo.json');
 
 let {
     ebt_lang=null,
+    ebt_site_image='amanda-flavell-9XSLoMlVhYU-unsplash.png',
 } = EBT_SITE_YAML;
 
-
-CONFIG.router.base = `/${REPO_NAME}`;
-Object.assign(CONFIG.head, {
-    titleTemplate: REPO_NAME,
-    title: REPO_NAME,
-    htmlAttrs: {
-      lang: ebt_lang === "all" ? null : ebt_lang,
-    },
+let routerBase = CONFIG.router.base = `/${ebt_repository}`;
+let htmlAttrs = {
+  lang: ebt_lang === "all" ? null : ebt_lang,
+};
+let head = Object.assign(CONFIG.head, {
+    titleTemplate: ebt_repository,
+    title: ebt_repository,
+    htmlAttrs,
 });
-CONFIG.env = Object.assign({}, CONFIG.env, {
+let env = CONFIG.env = Object.assign({}, CONFIG.env, {
     ebt_lang,
+    ebt_account,
+    ebt_repository,
+    ebt_site_image,
 });
 CONFIG.watch = Object.assign([], CONFIG.watch, [
     './ebt-site.yaml',
 ]);
+
+logger.info(`nuxt.config.js env`, env);
 
 export default CONFIG;

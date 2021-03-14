@@ -430,11 +430,10 @@ summary:focus {
   width: 100%;
 }
 .scv-nav-title {
-  margin-left: 1em;
+  margin-left: 0.5em;
   cursor: pointer;
 }
 .scv-nav-img {
-  cursor: pointer;
   height: 56px;
   border-bottom: 1px solid transparent;
   border-top: 1px solid transparent;
@@ -445,6 +444,7 @@ summary:focus {
   justify-content: flex-start;
   align-items: center;
   width: 50%;
+  cursor: pointer;
 }
 .scv-nav-app-icons {
   display: flex;
@@ -493,7 +493,7 @@ summary:focus {
   border-top-left-radius: 0.5em;
 }
 .nuxt-content {
-  max-width: 50em;
+  max-width: 55em;
 }
 .nuxt-content a {
   color: var(--scv-color-light) !important;
@@ -588,4 +588,9 @@ summary:focus {
   display: flex;
   flex-flow: column;
   align-items: center;
+}
+pre,
+blockquote {
+  border-left: 3pt solid #ccc;
+  padding-left: 0.5em;
 }

@@ -1,2 +1,2 @@
-# For a monolingual EBT website, uncomment the line below and specify the language
-# ebt_lang: de
+ebt_site_image: amanda-flavell-9XSLoMlVhYU-unsplash.png
+# ebt_lang: de # Language for monolingual EBT website

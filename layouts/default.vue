@@ -1,11 +1,16 @@
 <template>
   <v-app >
-    <v-app-bar dark :clipped-left="clipped" fixed app hide-on-scroll flat >
+    <v-app-bar dark :clipped-left="clipped" fixed app hide-on-scroll >
       <scv-app-bar 
         title="EBT-Site" 
-        imgUrl="chris-petrow-j4Wia6JDLm0-unsplash.png"
+        :imgUrl="ebtSiteImage"
         :monolingual="ebtLang"
         >
+        <v-btn icon class="scv-icon-btn" 
+          title="Github"
+          :href="githubUrl" target="_blank">
+          <v-icon>{{ mdiGithub }}</v-icon>
+        </v-btn>
       </scv-app-bar>
     </v-app-bar>
     <div class="site-main">
@@ -22,6 +27,9 @@
 <script>
 import Vue from 'vue';
 const { version } = require('~/package.json');
+const {
+  mdiGithub,
+} = require('@mdi/js');
 import { ScvVue } from '@sc-voice/scv-static';
 let {
   ScvAppBar,
@@ -36,6 +44,7 @@ export default {
   data () {
     return {
       clipped: false,
+      mdiGithub,
     }
   },
   mounted() {
@@ -51,6 +60,16 @@ export default {
     },
     ebtLang() {
         return this.$nuxt.context.env.ebt_lang;
+    },
+    ebtSiteImage() {
+        return this.$nuxt.context.env.ebt_site_image;
+    },
+    githubUrl() {
+        let {
+          ebt_repository,
+          ebt_account,
+        } = this.$nuxt.context.env;
+        return `https://github.com/${ebt_account}/${ebt_repository}`;
     },
   },
 }

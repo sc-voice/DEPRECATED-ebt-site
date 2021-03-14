@@ -15,7 +15,8 @@ else
 fi
 
 export BABEL_ENV=deploy
-scripts/wiki-images
+$DIR/repo-info > ebt-repo.json
+$DIR/wiki-images
 npm run version:nuxt
 npm run generate 2>&1
 git add content
