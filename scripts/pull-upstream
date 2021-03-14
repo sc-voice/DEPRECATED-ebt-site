@@ -1,0 +1,28 @@
+#!/bin/bash
+
+DIR=`dirname $0`
+SCRIPT=`basename $0`
+ROOT_DIR=sc-voice/ebt-site
+
+git config remote.origin.url | grep "$ROOT_DIR" ; RC=$?
+git config remote.origin.url | grep sc-voice/ebt-site
+if [ "$RC" == "0" ]; then
+  echo -e "$SCRIPT: $ROOT_DIR detected (no action taken)"
+  exit 0
+fi
+echo -e "$SCRIPT: pulling $ROOT_DIR ..."
+
+git config remote.upstream.url https://github.com/sc-voice/ebt-site.git
+git config remote.upstream.fetch +refs/heads/*:refs/remotes/upstream/*
+git config --list
+git fetch upstream
+git merge --no-commit --no-edit -s recursive -Xours upstream/main
+EBT_VER=`$DIR/version`
+git status | grep 'still merging' ; RC=$?
+if [ "$RC" == "0" ]; then
+  MSG="$SCRIPT: ebt-site v$EBT_VER => merged"
+  echo -e "$MSG"
+  git commit -m "$MSG"
+else
+  echo -e "$SCRIPT: ebt-site v$EBT_VER => unchanged"
+fi

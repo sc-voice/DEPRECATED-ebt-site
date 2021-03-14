@@ -1,6 +1,6 @@
 {
   "name": "@sc-voice/ebt-site",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "private": true,
   "scripts": {
     "dev": "nuxt",
