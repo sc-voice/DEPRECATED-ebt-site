@@ -23,6 +23,7 @@ if [ "$RC" == "0" ]; then
   MSG="$SCRIPT: ebt-site v$EBT_VER => merged"
   echo -e "$MSG"
   git commit -m "$MSG"
+  git push
 else
   echo -e "$SCRIPT: ebt-site v$EBT_VER => unchanged"
 fi
