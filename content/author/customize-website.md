@@ -40,3 +40,6 @@ The `ebt_site_image` option specifies the image
 shown in the navigation bar. 
 The default value is `amanda-flavell-9XSLoMlVhYU-unsplash.png`.
 Change it as you wish.
+
+## Website favicon
+To change the EBT website favicon, simply replace `static/favicon.png`
