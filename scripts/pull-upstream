@@ -15,9 +15,9 @@ echo -e "$SCRIPT: pulling $ROOT_DIR ..."
 
 git config remote.upstream.url https://github.com/sc-voice/ebt-site.git
 git config remote.upstream.fetch +refs/heads/*:refs/remotes/upstream/*
-echo -e "$SCRIPT: git fetch upstream => `git fetch upstream`"
+echo -e "$SCRIPT: git fetch upstream => `git fetch upstream 2>&1`"
 
-CMD="git merge --no-commit --no-edit -s recursive -Xours upstream/main"
+CMD="git merge --no-commit --no-edit -s recursive -Xours upstream/main 2>&1"
 echo =e "$SCRIPT: git merge: `$CMD`"
 EBT_VER=`$DIR/version`
 git status | grep 'still merging' ; RC=$?
@@ -25,7 +25,7 @@ if [ "$RC" == "0" ]; then
   MSG="$SCRIPT: ebt-site v$EBT_VER => merged"
   echo -e "$MSG"
   git commit -m "$MSG"
-  echo -e "$SCRIPT: git push => `git push`"
+  echo -e "$SCRIPT: git push => `git push 2>&1`"
   if [ "$GITHUB_ACTIONS" == "true" ]; then
     $DIR/deploy
   fi
