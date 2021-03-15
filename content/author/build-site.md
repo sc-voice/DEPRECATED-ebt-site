@@ -42,7 +42,7 @@ has been built.
 ![Initial Commit](./initial-commit.png)
 
 ### Step 4. Enable Github Pages
-Your EBT website will be a (Github Page](https://pages.github.com/).
+Your EBT website will be a [Github Page](https://pages.github.com/).
 Let's make it.
 
 1. Click <kbd>Settings</kbd>
