@@ -4,7 +4,7 @@ DIR=`dirname $0`
 SCRIPT=`basename $0 | tr abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ`
 ROOT_DIR=sc-voice/ebt-site
 
-echo -e "$SCRIPT: git pull => `git pull`"
+echo -e "$SCRIPT: git pull => `git pull 2>&1`"
 
 git config remote.origin.url | grep "$ROOT_DIR" > /dev/null ; RC=$?
 if [ "$RC" == "0" ]; then
@@ -15,9 +15,10 @@ echo -e "$SCRIPT: pulling $ROOT_DIR ..."
 
 git config remote.upstream.url https://github.com/sc-voice/ebt-site.git
 git config remote.upstream.fetch +refs/heads/*:refs/remotes/upstream/*
-git config --list
-git fetch upstream
-git merge --no-commit --no-edit -s recursive -Xours upstream/main
+echo -e "$SCRIPT: git fetch upstream => `git fetch upstream`"
+
+CMD="git merge --no-commit --no-edit -s recursive -Xours upstream/main"
+echo =e "$SCRIPT: git merge: `$CMD`"
 EBT_VER=`$DIR/version`
 git status | grep 'still merging' ; RC=$?
 if [ "$RC" == "0" ]; then
