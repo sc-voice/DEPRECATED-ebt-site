@@ -4,6 +4,8 @@ DIR=`dirname $0`
 SCRIPT=`basename $0`
 ROOT_DIR=sc-voice/ebt-site
 
+git pull
+
 git config remote.origin.url | grep "$ROOT_DIR" ; RC=$?
 git config remote.origin.url | grep sc-voice/ebt-site
 if [ "$RC" == "0" ]; then
