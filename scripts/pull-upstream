@@ -17,8 +17,8 @@ git config remote.upstream.url https://github.com/sc-voice/ebt-site.git
 git config remote.upstream.fetch +refs/heads/*:refs/remotes/upstream/*
 echo -e "$SCRIPT: git fetch upstream => `git fetch upstream`"
 
-echo -e "$SCRIPT: git merge =>\
-`git merge --no-commit --no-edit -s recursive -Xours upstream/main 2>&1`"
+echo -e "$SCRIPT: git merge =>"
+git merge --no-commit --no-edit -s recursive -Xours upstream/main 2>&1
 
 EBT_VER=`$DIR/version`
 git status | grep 'still merging' ; RC=$?
