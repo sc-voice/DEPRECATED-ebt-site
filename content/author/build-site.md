@@ -33,11 +33,10 @@ but we'll change it later.
 
 ### Step 3. Build your EBT website
 Once you have created your ebt-site fork, 
-Github will automatically
-start building your own EBT website. 
-Click the `Actions` tab in the top-center of your web page to see what's
-happening. After about 5 minutes, you'll see that the initial commit 
-has been built.
+Github still needs a little push in order to start building your new EBT website. For this purpose you can make any edit on any page of your new repository.
+
+Open the `content` folder in your repository. There you find various sub-folders. Choose any file in any of those to make any small edit. Just changing one character is enough. Committing your change will start a workflow run. Click the `Actions` tab in the top-center of your web page to see what's happening. After about 5 minutes, you'll see that the initial commit 
+has been built. (It will be called whatever you call your commit.)
 
 ![Initial Commit](./initial-commit.png)
 
