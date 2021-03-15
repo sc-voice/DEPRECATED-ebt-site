@@ -1,15 +1,16 @@
 #!/bin/bash
 DIR=`dirname $0`
+SCRIPT=`basename $0 | tr abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ`
 
-echo -e "DEPLOY\t: start"
+echo -e "$SCRIPT: start"
 
-echo -e "DEPLOY\t: checking git..."
+echo -e "$SCRIPT: checking git..."
 git checkout package-lock.json
 git status 2> /dev/null | grep "nothing to commit"; RC=$?
 if [ "$RC" == "0" ]; then
-  echo -e "DEPLOY\t: git is clean (OK)"
+  echo -e "$SCRIPT: git is clean (OK)"
 else
-  echo -e "DEPLOY\t: git is NOT clean (CANCELED)"
+  echo -e "$SCRIPT: git is NOT clean (CANCELED)"
   git status
   exit -1
 fi
@@ -27,4 +28,4 @@ git push &&\
 find dist &&\
 RC=$?
 
-echo -e "DEPLOY\t: done => $RC"
+echo -e "$SCRIPT: done => $RC"

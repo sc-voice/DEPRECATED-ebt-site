@@ -1,13 +1,12 @@
 #!/bin/bash
 
 DIR=`dirname $0`
-SCRIPT=`basename $0`
+SCRIPT=`basename $0 | tr abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ`
 ROOT_DIR=sc-voice/ebt-site
 
-git pull
+echo -e "$SCRIPT: git pull => `git pull`"
 
-git config remote.origin.url | grep "$ROOT_DIR" ; RC=$?
-git config remote.origin.url | grep sc-voice/ebt-site
+git config remote.origin.url | grep "$ROOT_DIR" > /dev/null ; RC=$?
 if [ "$RC" == "0" ]; then
   echo -e "$SCRIPT: $ROOT_DIR detected (no action taken)"
   exit 0
@@ -25,7 +24,10 @@ if [ "$RC" == "0" ]; then
   MSG="$SCRIPT: ebt-site v$EBT_VER => merged"
   echo -e "$MSG"
   git commit -m "$MSG"
-  git push
+  echo -e "$SCRIPT: git push => `git push`"
+  if [ "$GITHUB_ACTIONS" == "true" ]; then
+    $DIR/deploy
+  fi
 else
   echo -e "$SCRIPT: ebt-site v$EBT_VER => unchanged"
 fi
