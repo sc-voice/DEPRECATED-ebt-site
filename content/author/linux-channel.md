@@ -29,7 +29,7 @@ All the other folders in the `content` folder are secondary channels.
 Each markdown file in a secondary channel is a leaf node in the 
 two level wiki hierarchy.
 
-## Channel Proggramming
+## Channel Programming
 The behavior of each channel is programmed using
 the `pages` folder using Vue components.
 
