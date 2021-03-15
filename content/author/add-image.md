@@ -36,7 +36,7 @@ When you're done editing, save the image.
 When saving the image, be sure to save it at the resolution you need.
 Most public domain images are much higher resolution than needed for a website.
 To save space, save your image as a 200 pixel high PNG file. 
-PNG files are important for the web because PNF files are transparent.
+PNG files are important for the web because PNG files are transparent.
 
 ## Step 3. Add Image file
 Add an image file using Github: 
