@@ -1,6 +1,6 @@
 ---
 title: Linux Installation
-description: Install EBT-Set development environment
+description: Install EBT-Site development environment
 img: tux-linux.png
 alt: Generic picture of tux-linux
 category: github
