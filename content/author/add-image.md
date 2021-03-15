@@ -2,6 +2,7 @@
 title: Adding an image
 description: Add a public-domain image
 img: benjamin-balazs-xtiGzOiJe1Q-unsplash.png
+category: github
 alt: Generic picture of camera
 ---
 

@@ -3,6 +3,7 @@ title: Wiki Links
 description: Link web pages to each other or Dhamma content
 img: nick-fewings-psV7OMIL-iw-unsplash.png
 alt: Generic picture of signpost
+category: github
 order: 9999
 ---
 

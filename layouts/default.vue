@@ -2,7 +2,7 @@
   <v-app >
     <v-app-bar dark :clipped-left="clipped" fixed app hide-on-scroll >
       <scv-app-bar 
-        title="EBT-Site" 
+        :title="ebtSiteTitle"
         :imgUrl="ebtSiteImage"
         :monolingual="ebtLang"
         >
@@ -63,6 +63,9 @@ export default {
     },
     ebtSiteImage() {
         return this.$nuxt.context.env.ebt_site_image;
+    },
+    ebtSiteTitle() {
+        return this.$nuxt.context.env.ebt_site_title;
     },
     githubUrl() {
         let {

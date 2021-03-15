@@ -1,7 +1,9 @@
 <template>
   <div class="nuxt-content scv-toc">
-    <h1>Wiki Contents</h1>
-    <scv-article-items :article="article" :items="items"/>
+    <h2>General Interest</h2>
+    <scv-article-items :article="article" :items="general"/>
+    <h2>Wiki Administration</h2>
+    <scv-article-items :article="article" :items="admin"/>
   </div>
 </template>
 <script>
@@ -12,12 +14,16 @@
   export default {
     async asyncData({ $content, params }) {
       const items = await $content('wiki')
-        .only(['title', 'description', 'img', 'slug', 'author'])
-        .sortBy('title', 'asc')
+        .only(['title', 'category', 'description', 'img', 'slug', 'author'])
+        .sortBy('order', 'asc')
         .fetch()
+      const general = items.filter(item=>item.category==='general');
+      const admin = items.filter(item=>item.category==='admin');
 
       return {
         items,
+        general,
+        admin,
         article: {
           slugDir: 'wiki',
         },

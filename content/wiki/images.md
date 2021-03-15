@@ -4,6 +4,7 @@ description: Information about site images
 img: benjamin-balazs-xtiGzOiJe1Q-unsplash.png
 img-alt: Generic image for images 
 slugDir: images
+category: admin
 order: 9999
 ---
 

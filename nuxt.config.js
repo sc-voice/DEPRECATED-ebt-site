@@ -13,6 +13,7 @@ let {
 let {
     ebt_lang=null,
     ebt_site_image='amanda-flavell-9XSLoMlVhYU-unsplash.png',
+    ebt_site_title='EBT-Site',
 } = EBT_SITE_YAML;
 
 let routerBase = CONFIG.router.base = `/${ebt_repository}`;
@@ -29,6 +30,7 @@ let env = CONFIG.env = Object.assign({}, CONFIG.env, {
     ebt_account,
     ebt_repository,
     ebt_site_image,
+    ebt_site_title,
 });
 CONFIG.watch = Object.assign([], CONFIG.watch, [
     './ebt-site.yaml',

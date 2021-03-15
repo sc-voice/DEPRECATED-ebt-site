@@ -3,6 +3,7 @@ title: Rename EBT website
 description: Change website name
 img: brett-jordan-POMpXtcVYHo-unsplash.png
 alt: Generic picture of words
+category: github
 order: 1
 ---
 

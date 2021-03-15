@@ -2,6 +2,7 @@
 title: Create a Buddhist Website
 description: Create a static website with Early Buddhist Texts from SuttaCentral.net
 img: ameya-sawant-89UPihhAkmo-unsplash.png
+category: github
 alt: Generic picture of monastery
 order: 1
 ---
