@@ -29,6 +29,8 @@ if [ "$RC" == "0" ]; then
   echo -e "$SCRIPT: git push => `git push 2>&1`"
   if [ "$GITHUB_ACTIONS" == "true" ]; then
     $DIR/deploy
+  else 
+    echo -e "$SCRIPT: deploy $GITHUB_ACTIONS => (ignored)"
   fi
 else
   echo -e "$SCRIPT: ebt-site v$EBT_VER => unchanged"
