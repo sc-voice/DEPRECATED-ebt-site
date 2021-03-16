@@ -1,3 +1,20 @@
+# 
+# EBT WEBSITE CUSTOMIZATION OPTIONS 
+# ====================================
+
+# ebt_site_title
+# --------------
+# Specifiesthe text shown in the upper left corner 
+# of the EBT website
 ebt_site_title: EBT-Site
+
+# ebt_site_image
+# --------------
+# Specifies the image used in the upper left corner of the EBT website
 ebt_site_image: amanda-flavell-9XSLoMlVhYU-unsplash.png
-# ebt_lang: de # Language for monolingual EBT website
+
+# ebt_site_lang
+# -------------
+# Sets the language for a monolingual EBT website
+# For example, we can change "any" to "de" for German.
+ebt_lang: any
