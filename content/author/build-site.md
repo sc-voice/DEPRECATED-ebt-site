@@ -57,7 +57,20 @@ Eventually you will see a green box:
 
 Click on the link in the green box to view your new EBT website.
 
-What's next?
+### Step 5. Enable Scheduled Actions
+EBT websites get the latest documentation and Dhamma content
+from their parent EBT website.
+To enable content updates, we need to enable the _schedule-actions_ workflow.
+
+1. Click on the Github icon in the upper right of your screen
+1. Select the <kbd>Actions</kbd> tab
+1. Click <kbd>schedule-actions</kbd>
+1. Click <kbd>Enable workflow</kbd>
+
+### Next Steps
+Congratulations! You now have your own EBT website.
+
+The following steps are optional:
 
 * [rename your website](/author/rename-website)
 * [customize your website](/author/customize-website)
