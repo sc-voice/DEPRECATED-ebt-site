@@ -7,7 +7,7 @@ category: github
 order: 1
 ---
 
-You EBT website is initially named `ebt-site`,
+Your EBT website is initially named `ebt-site`,
 which is the name used in the URL of your EBT website.
 In particular, for a Github user named "Sariputta", the URL of
 the EBT website would be 
