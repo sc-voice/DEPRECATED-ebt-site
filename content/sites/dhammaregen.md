@@ -1,6 +1,6 @@
 ---
 title: Dhammaregen
-description: Willkommen bei Dhammaregen!
+description: Frühe buddhistische Texte in deutscher Sprache
 link: https://dhammaregen.github.io/dhammaregen
 img: dhammaregen.png
 img-alt: Dhammaregen web page image
