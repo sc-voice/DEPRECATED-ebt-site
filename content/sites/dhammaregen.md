@@ -2,7 +2,7 @@
 title: Dhammaregen
 description: Willkommen bei Dhammaregen!
 link: https://dhammaregen.github.io/dhammaregen
-img: francesco-ungaro-boulder-environment-flow-landscape-464327-pexels.png
+img: dhammaregen.png
 img-alt: Dhammaregen web page image
 order: 100
 ---
