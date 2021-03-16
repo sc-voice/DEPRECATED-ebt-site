@@ -62,3 +62,26 @@ To add a new channel called `tipitaka`:
 <pre>
 scripts/wiki-channel tipitaka
 </pre>
+
+## Scheduling Channel Updates
+Channel updates are handled by the `.github/workflow/schedule-actions.yml` file.
+
+<pre>
+name: schedule-actions
+on: 
+  schedule:
+    - cron: 15 4,12,20 * * *
+jobs:
+  build-job:
+    ...
+</pre>
+
+To change the update schedule, edit the following line:
+
+<pre>
+cron: 15 4,12,20 * * *
+</pre>
+
+See [crontab.guru](https://crontab.guru/) for help 
+with the cryptic cron syntaz:
+
