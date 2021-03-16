@@ -6,7 +6,7 @@ img: dhammaregen.png
 img-alt: Dhammaregen web page image
 order: 100
 ---
-### Willkommen bei Dhammaregen!
-Dhammaregen ist ursprünglich als deutschsprachige Begleitwebseite zu SuttaCentral Voice entstanden. Sie wurde weiterentwickelt zu einer Webseite, die neben den ursprünglichen Informatiionen auch neue deutsche Sutta-Übersetzungen von Anagarika Sabbamitta beherbergt.
+### Willkommen bei Dhammaregen
+*Dhammaregen* ist ursprünglich als deutschsprachige Begleitwebseite zu [Voice.suttaCentral.net](https://voice.suttacentral.net) entstanden. Sie wurde weiterentwickelt zu einer Webseite, die neben den ursprünglichen Informatiionen auch neue deutsche Sutta-Übersetzungen von Anagarika Sabbamitta beherbergt.
 
 
