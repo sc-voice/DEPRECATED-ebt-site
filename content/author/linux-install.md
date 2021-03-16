@@ -10,7 +10,7 @@ order: 10000
 ## Prerequisites
 
 * [Learn Linux](https://linuxjourney.com/)
-* Ubuntu 18 or Debian 10 
+* Ubuntu 20 or Debian 10 
 * Node v14
 
 
