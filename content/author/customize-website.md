@@ -27,7 +27,7 @@ and commented out with a leading `#`:
 
 For example, to restrict the EBT website to German,
 we remove the `#` and
-specify the ISO code for German, which is `de`:
+specify the two-letter ISO code for German, which is `de`:
 
 `ebt_lang: de`
 
