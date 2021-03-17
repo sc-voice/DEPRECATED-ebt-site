@@ -38,5 +38,6 @@ git pull
 npm install
 </pre>
 
+In order to avoid merge conflicts, it is recommended to update the repository before committing any local changes.
 
 
