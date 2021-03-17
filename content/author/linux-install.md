@@ -31,3 +31,12 @@ npm run dev
 All changes made to your EBT source will
 be reflected immediately in the browser.
 
+## Maintenance
+To keep your local repository up-to-date, run
+<pre>
+git pull
+npm install
+</pre>
+
+
+
