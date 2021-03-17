@@ -32,14 +32,26 @@ Use your favorite editor to edit your image.
 Many online editors  such as [Pixlr](https://pixlr.com) 
 allow you to edit images and save them as PNG files.
 Use your editor to crop the image or adjust saturation, exposure, etc. 
-When you're done editing, save the image.
+Image thumbnails expect a 4:5 aspect ratio, 
+but you can choose otherwise.
+
+## Step 3. Save the Image
+If you download the image from 
+[pexels](https://pexels.com} or 
+[unsplash](https://unsplash.com),
+keep the suggested file name, 
+but save the image as a PNG file.
+PNG files are ideal for web use since they are transparent.
 
 When saving the image, be sure to save it at the resolution you need.
 Most public domain images are much higher resolution than needed for a website.
-To save space, save your image as a 200 pixel high PNG file. 
-PNG files are important for the web because PNG files are transparent.
+To save space, save your image as a 
+200 pixel high PNG file with a width of 250 pixels or more. 
+Your picture thumbnail will look best with this 4:5 aspect ratio.  
+Wider pictures will be cropped. 
+Narrower pictures won't line up with the other thumbnails on their right side.
 
-## Step 3. Add Image file
+## Step 4. Add Image file
 Add an image file using Github: 
 
 1. Navigate to the <code>static</code> folder
@@ -47,7 +59,7 @@ Add an image file using Github:
 
 <p><img src="./github-add-image.png" width="600px"/></p>
 
-## Step 4. Use the Image
+## Step 5. Use the Image
 
 #### Wiki Page Title Image
 The most common use of images will be for 
@@ -91,4 +103,11 @@ Change the default image to your new image.
 <pre>
 ebt_site_image: amanda-flavell-9XSLoMlVhYU-unsplash.png
 </pre>
+
+## Step 6. Removing an Image
+If you don't want an image and need to remove it:
+
+1. Delete the image from the `static` folder
+1. Delete the image content markdown file from the `content/images` folder
+
 

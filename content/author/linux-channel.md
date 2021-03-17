@@ -33,7 +33,7 @@ two level wiki hierarchy.
 The behavior of each channel is programmed using
 the `pages` folder using Vue components.
 
-</pre>
+<pre>
 pages
 pages/wiki
 pages/wiki/_slug.vue
