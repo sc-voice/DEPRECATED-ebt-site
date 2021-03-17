@@ -83,5 +83,5 @@ cron: 15 4,12,20 * * *
 </pre>
 
 See [crontab.guru](https://crontab.guru/) for help 
-with the cryptic cron syntaz:
+with the cryptic cron syntax.
 
