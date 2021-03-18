@@ -38,6 +38,7 @@ description: $CHANNEL description
 img: wheel.png
 img-alt: Generic image for $CHANNEL 
 slugDir: $CHANNEL
+category: New
 order: 9999
 ---
 ### Welcome to $CHANNEL!

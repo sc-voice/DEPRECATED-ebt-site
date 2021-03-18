@@ -32,11 +32,26 @@ All changes made to your EBT source will
 be reflected immediately in the browser.
 
 ## Maintenance
-To keep your local repository up-to-date, run
+EBT-Site changes regularly. 
+Your forked repository has a Github action that 
+automatically pulls from the upstream EBT-site.
+
+At the start of each workday, you should
+refresh your local repository to get the latest changes.
+Merge conflicts should be rare since merges are
+automatically resolved in favor of your changes.
+
+<pre>
+git pull
+</pre>
+
+If you need upstream changes immediately, 
+you can pull them to your own machine:
+
 <pre>
 scripts/pull-upstream
 </pre>
 
-In order to avoid merge conflicts, it is recommended to update the repository before committing any local changes.
-
+By updating your locale repository regularly,
+you will avoid merge conflicts.
 

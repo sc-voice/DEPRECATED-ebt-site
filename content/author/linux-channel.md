@@ -48,11 +48,9 @@ pages/sites/_slug.vue
 </pre>
 
 ## Removing a Channel
-To hide a channel, simply remove the channel file from the `content/wiki` folder.
+To hide a channel, blank out its YAML category.
 
-To restore a channel, copy the original file
-from [sc-voice/ebt-site](https://github.com/sc-voice/ebt-site/tree/main/content/wiki)
-back into the `content/wiki` folder.
+To restore a channel, set its YAML category to the desired category title
 
 Commit and push your change to trigger a rebuild of your website.
 
@@ -62,6 +60,9 @@ To add a new channel called `tipitaka`:
 <pre>
 scripts/wiki-channel tipitaka
 </pre>
+
+Be sure to edit the new channel Markdown file in `content/wiki` 
+and set the desired category title. The default category title is "New".
 
 ## Scheduling Channel Updates
 Channel updates are handled by the `.github/workflow/schedule-actions.yml` file.

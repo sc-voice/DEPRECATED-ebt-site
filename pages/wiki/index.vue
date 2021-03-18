@@ -18,7 +18,7 @@
         .sortBy('order', 'asc')
         .fetch()
       const catMap = items.reduce((a,item)=>{
-        a[item.category] = item.category;
+        item.category && (a[item.category] = item.category);
         return a;
       }, {});
       const categories = Object.keys(catMap).sort((a,b)=>a.localeCompare(b));
@@ -33,7 +33,9 @@
     },
     methods: {
       categoryItems(category) {
-        return this.items.filter(item=>item.category===category);
+        return this.items.filter(item=> {
+          return item.category===category && item.category;
+        });
       }
     },
     components: {
