@@ -3,7 +3,7 @@ title: Welcome to EBT-Site
 description: Wiki welcome page
 img: amanda-flavell-9XSLoMlVhYU-unsplash.png
 img-alt: A picture of the Buddha
-category: general
+category: 1. General
 order: 1
 ---
 

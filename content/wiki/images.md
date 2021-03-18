@@ -4,7 +4,7 @@ description: Information about site images
 img: benjamin-balazs-xtiGzOiJe1Q-unsplash.png
 img-alt: Generic image for images 
 slugDir: images
-category: admin
+category: 2. Wiki Administration
 order: 9999
 ---
 

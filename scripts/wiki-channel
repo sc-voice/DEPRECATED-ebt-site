@@ -35,7 +35,7 @@ cat > content/wiki/$CHANNEL.md << MDCHANNEL
 ---
 title: $CHANNEL title
 description: $CHANNEL description
-img: candle.png
+img: wheel.png
 img-alt: Generic image for $CHANNEL 
 slugDir: $CHANNEL
 order: 9999

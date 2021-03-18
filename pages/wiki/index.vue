@@ -1,9 +1,9 @@
 <template>
   <div class="nuxt-content scv-toc">
-    <h2>General Interest</h2>
-    <scv-article-items :article="article" :items="general"/>
-    <h2>Wiki Administration</h2>
-    <scv-article-items :article="article" :items="admin"/>
+    <div v-for="category in categories" :key="category">
+      <h2>{{category}}</h2>
+      <scv-article-items :article="article" :items="categoryItems(category)"/>
+    </div>
   </div>
 </template>
 <script>
@@ -17,16 +17,23 @@
         .only(['title', 'category', 'description', 'img', 'slug', 'author'])
         .sortBy('order', 'asc')
         .fetch()
-      const general = items.filter(item=>item.category==='general');
-      const admin = items.filter(item=>item.category==='admin');
+      const catMap = items.reduce((a,item)=>{
+        a[item.category] = item.category;
+        return a;
+      }, {});
+      const categories = Object.keys(catMap).sort((a,b)=>a.localeCompare(b));
 
       return {
         items,
-        general,
-        admin,
+        categories,
         article: {
           slugDir: 'wiki',
         },
+      }
+    },
+    methods: {
+      categoryItems(category) {
+        return this.items.filter(item=>item.category===category);
       }
     },
     components: {
