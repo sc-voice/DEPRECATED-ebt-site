@@ -34,8 +34,7 @@ be reflected immediately in the browser.
 ## Maintenance
 To keep your local repository up-to-date, run
 <pre>
-git pull
-npm install
+scripts/pull-upstream
 </pre>
 
 In order to avoid merge conflicts, it is recommended to update the repository before committing any local changes.
