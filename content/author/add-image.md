@@ -4,6 +4,7 @@ description: Add a public-domain image
 img: benjamin-balazs-xtiGzOiJe1Q-unsplash.png
 category: github
 alt: Generic picture of camera
+order: 4
 ---
 
 Image files are stored in the <code>static</code> folder.
@@ -19,13 +20,16 @@ When you include an image, be sure to thank your source!
 
 * [Unsplash.com](https://unsplash.com) 
 * [Pexels.com](https://Pexels.com) 
-* [Wikimedia](https://commons.wikimedia.org/wiki/Commons:Free_media_resources/Photography)
+* [Wikimedia](/author/add-wikimedia) (limited use)
 
 If you use your own image, consider uploading them at full
 resolution for others to use on any of the above
 sites. Then download and edit your image again just as you 
 would any other public domain image. It's a little more work,
 but that work will help others.
+
+For Wikimedia, special considerations apply.
+See [Adding a Wikimedia image](/author/add-wikimedia)
 
 ## Step 2. Edit the Image
 Use your favorite editor to edit your image.
