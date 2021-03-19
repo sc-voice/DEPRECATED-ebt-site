@@ -75,6 +75,8 @@
 	"author/customize-website",
 	"_content/build-site",
 	"author/build-site",
+	"_content/add-wikimedia",
+	"author/add-wikimedia",
 	"_content/add-image",
 	"author/add-image"
 ]
