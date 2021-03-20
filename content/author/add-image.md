@@ -41,7 +41,7 @@ but you can choose otherwise.
 
 ## Step 3. Save the Image
 If you download the image from 
-[pexels](https://pexels.com} or 
+[pexels](https://pexels.com) or 
 [unsplash](https://unsplash.com),
 keep the suggested file name, 
 but save the image as a PNG file.
