@@ -64,6 +64,11 @@ scripts/wiki-channel tipitaka
 Be sure to edit the new channel Markdown file in `content/wiki` 
 and set the desired category title. The default category title is "New".
 
+#### IMPORTANT!
+_Do NOT change the generated file or folder names._ They are used
+to link the files by name. Renaming the file or folder names
+will cause the links to fail with HTTP error 404.
+
 ## Scheduling Channel Updates
 Channel updates are handled by the `.github/workflow/schedule-actions.yml` file.
 
