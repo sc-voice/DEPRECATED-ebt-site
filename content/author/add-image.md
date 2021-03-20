@@ -19,7 +19,8 @@ so even your own images will be covered by the MIT License.
 When you include an image, be sure to thank your source!
 
 * [Unsplash.com](https://unsplash.com) 
-* [Pexels.com](https://Pexels.com) 
+* [Pexels.com](https://pexels.com) 
+* [Pixabay.com](https://pixabay.com) 
 * [Wikimedia](/author/add-wikimedia) (limited use)
 
 If you use your own image, consider uploading them at full
@@ -40,11 +41,7 @@ Image thumbnails expect a 4:5 aspect ratio,
 but you can choose otherwise.
 
 ## Step 3. Save the Image
-If you download the image from 
-[pexels](https://pexels.com) or 
-[unsplash](https://unsplash.com),
-keep the suggested file name, 
-but save the image as a PNG file.
+It's important to save the image as a PNG file.
 PNG files are ideal for web use since they are transparent.
 
 When saving the image, be sure to save it at the resolution you need.
@@ -54,6 +51,11 @@ To save space, save your image as a
 Your picture thumbnail will look best with this 4:5 aspect ratio.  
 Wider pictures will be cropped. 
 Narrower pictures won't line up with the other thumbnails on their right side.
+
+* [Unsplash images:](https://unsplash.com) save as PNG file with provided name
+* [Pexels images:](https://pexels.com) save as PNG file with provided name
+* [Pixabay images:](https://pixabay.com) save as PNG file, prefixing the provided name with `pixabay-` 
+* [Wikimedia images:](/author/add-wikimedia) do not save or edit Wikimedia files
 
 ## Step 4. Add Image file
 Add an image file using Github: 
