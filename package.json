@@ -1,6 +1,6 @@
 {
   "name": "@sc-voice/ebt-site",
-  "version": "1.5.6",
+  "version": "1.5.7",
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -31,7 +31,6 @@
     "express": "^4.17.1",
     "jest": "^26.6.3",
     "nuxt": "^2.14.12",
-    "scv-bilara": "^1.9.8",
     "vue-jest": "^3.0.4"
   }
 }
