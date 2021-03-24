@@ -105,12 +105,12 @@ label {
 }
 .scv-text-container .scv-matched {
   cursor: pointer;
-  text-decoration: underline;
 }
 .scv-text-container .scv-matched:hover,
 .scv-text-container .scv-matched:focus {
   color: var(--scv-focus-color-light);
   text-decoration-color: var(--scv-focus-color-light);
+  text-decoration: underline;
 }
 
 .scv-text-btn {
