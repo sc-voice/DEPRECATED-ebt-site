@@ -9,6 +9,8 @@
 	"wiki/images",
 	"_content/author",
 	"wiki/author",
+	"_content/admin",
+	"wiki/admin",
 	"_content/voice",
 	"sites/voice",
 	"_content/suttacentral",
@@ -33,6 +35,8 @@
 	"images/rktkn-iGj6MTyjC3M-unsplash",
 	"_content/pixabay-theravada-buddhism-1773666_1920",
 	"images/pixabay-theravada-buddhism-1773666_1920",
+	"_content/pexels-pixabay-417171",
+	"images/pexels-pixabay-417171",
 	"_content/pexels-kaboompics-com-6444",
 	"images/pexels-kaboompics-com-6444",
 	"_content/pexels-francesco-ungaro-464327",
@@ -51,6 +55,8 @@
 	"images/favicon",
 	"_content/faizan-saeed-PPeZwFWnWNE-unsplash",
 	"images/faizan-saeed-PPeZwFWnWNE-unsplash",
+	"_content/dylan-gillis-KdeqA3aTnBY-unsplash",
+	"images/dylan-gillis-KdeqA3aTnBY-unsplash",
 	"_content/chris-petrow-j4Wia6JDLm0-unsplash",
 	"images/chris-petrow-j4Wia6JDLm0-unsplash",
 	"_content/brett-zeck-eyfMgGvo9PA-unsplash",
@@ -84,5 +90,7 @@
 	"_content/add-wikimedia",
 	"author/add-wikimedia",
 	"_content/add-image",
-	"author/add-image"
+	"author/add-image",
+	"_content/schedule",
+	"admin/schedule"
 ]
