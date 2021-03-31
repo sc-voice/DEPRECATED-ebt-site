@@ -44,7 +44,7 @@ if no resources are available.
     let page_utc = document && document.getElementById('page_utc');
     if (page_utc) {
       let date = new Date();
-      let utc = `${date.toLocaleTimeString('UTC').substring(0,5)} UTC`;
+      let utc = `${date.toISOString().substring(11,16)} UTC`;
       page_utc.innerHTML = utc;
     }
   }
