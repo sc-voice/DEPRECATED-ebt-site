@@ -8,7 +8,7 @@ git config remote.origin.url | grep "$ROOT_DIR" > /dev/null ; RC=$?
 if [ "$RC" == "0" ]; then
   echo -e "$SCRIPT: npm install --save @sc-voice/scv-static"
   npm install --save @sc-voice/scv-static@latest
-  $DIR/git-commit-version
+  $DIR/git-commit-version $1
 else 
   git config --list
   echo -e "$SCRIPT: (skipping scv-static update)"
