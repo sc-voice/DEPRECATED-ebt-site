@@ -33,6 +33,16 @@ if no resources are available.
 | <span class="utc-time">20:15</span> | update [scv-static](https://github.com/sc-voice/scv-static) |
 | <span class="utc-time">20:30</span> | update [ebt-site](https://github.com/sc-voice/ebt-site) 🎉 |
 
+### Scheduling EBT-site Forks
+EBT-site forks by default inherit the schedule for the main EBT-site (see above).
+Since the fork is refreshed from the main EBT-site, it won't get the latest information
+until the next cycle, eight hours later.
+If you would like your EBT-site fork to get content sooner, 
+just edit `.github/workflows/schedule-actions.yml` 
+and change the `30` to `45`. 
+Your EBT-site fork will update at 45 minutes past the hour, 
+after the main EBT-site has been updated.
+
 ### Details
 
 * [sc-voice/bilara-data](https://github.com/sc-voice/bilara-data) stores the current snapshot of [suttacentral/bilara-data](https://github/suttacentral/bilara-data) as a fallback in the event of any SuttaCentral data restructuring.
