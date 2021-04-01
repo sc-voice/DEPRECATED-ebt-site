@@ -24,6 +24,7 @@ EBT_VER=`$DIR/version`
 git status | grep 'still merging' ; RC=$?
 if [ "$RC" == "0" ]; then
   MSG="$SCRIPT: ebt-site v$EBT_VER => merged"
+  npm install
   echo -e "$MSG"
   git commit -m "$MSG"
   git push; RC=$?
