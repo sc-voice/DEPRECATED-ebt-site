@@ -51,6 +51,13 @@ after the main EBT-site has been updated.
 * [sc-api](https://github.com/sc-voice/sc-api) stores the latest SuttaCentral suttaplex information for every sutta. [Voice.suttacnetral.net](https://voice.suttacentral.net) uses SC-Api to access legacy, non-segmented suttas. It is a fallback that enables Voice.suttacentral.net to continue working if Suttacentral.net is offline.
 * [ebt-site](https://github.com/sc-voice/ebt-site) is the main EBT website
 
+### ⚠️IMPORTANT
+Do not change the EBT-site `schedule-actions.yml`.
+Changes to the EBT-site `schedule-actions.yml` will
+block all Github Actions upstream pulls from EBT-site forks
+unless those forks have enabled
+[workflow editing for Github Actions](https://github.community/t/refusing-to-allow-an-integration-to-create-or-update/16326/9).
+
 <script>
   var updateTime = ()=>{
     let page_utc = document && document.getElementById('page_utc');
