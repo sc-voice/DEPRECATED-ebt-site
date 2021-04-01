@@ -3,8 +3,8 @@ title: License
 description: Software and content licenses
 img: license.png
 img-alt: A picture of MIT and CC0 licenses
-category: 1. General
-order: 1
+category: 2. Wiki Administration
+order: 9999.4
 ---
 
 ### EBT-Site software 
