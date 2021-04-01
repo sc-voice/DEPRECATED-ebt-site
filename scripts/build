@@ -14,5 +14,5 @@ else
   echo -e "$SCRIPT: (skipping scv-static update)"
 fi
 
-$DIR/pull-upstream
-
+$DIR/pull-upstream; RC=$?
+exit $RC

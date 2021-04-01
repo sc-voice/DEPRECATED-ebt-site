@@ -26,7 +26,13 @@ if [ "$RC" == "0" ]; then
   MSG="$SCRIPT: ebt-site v$EBT_VER => merged"
   echo -e "$MSG"
   git commit -m "$MSG"
-  echo -e "$SCRIPT: git push => `git push 2>&1`"
+  git push; RC=$?
+  if [ "$RC" == "0" ]; then
+    echo -e "$SCRIPT: git push => (ok)"
+  else
+    echo -e "$SCRIPT: git push => $RC (ERROR)"
+    exit -1
+  fi
   if [ "$GITHUB_ACTIONS" == "true" ]; then
     $DIR/deploy
   else 
