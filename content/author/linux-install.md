@@ -1,17 +1,27 @@
 ---
-title: Linux Installation
-description: Install EBT-Site development environment
+title: Linux Development
+description: Develop your EBT-site quickly using Linux
 img: tux-linux.png
 alt: Generic picture of tux-linux
 category: github
 order: 10000
 ---
 
+Editing an EBT-site with Github is easy, but slow.
+
+If you want to edit more efficiently,
+consider using a Linux EBT-site development environment.
+With a Linux EBT-site development environment, your
+wiki changes will be shown almost instantly as you develop.
+When you're done with changes, 
+just commit and push your edits to Github.
+
 ## Prerequisites
 
 * [Learn Linux](https://linuxjourney.com/)
 * Ubuntu 20 or Debian 10 
 * Node v14
+* (Optional) Vue/Vuetify knowledge
 
 
 ## Installation
