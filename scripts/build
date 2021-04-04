@@ -9,6 +9,7 @@ if [ "$RC" == "0" ]; then
   echo -e "$SCRIPT: npm install --save @sc-voice/scv-static"
   npm install --save @sc-voice/scv-static@latest
   $DIR/git-commit-version $1
+  $DIR/deploy
 else 
   git config --list
   echo -e "$SCRIPT: (skipping scv-static update)"
