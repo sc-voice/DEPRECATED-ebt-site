@@ -1,6 +1,6 @@
 {
   "name": "@sc-voice/ebt-site",
-  "version": "1.5.35",
+  "version": "1.5.36",
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@mdi/js": "^5.9.55",
-    "@sc-voice/scv-static": "^0.5.63",
+    "@sc-voice/scv-static": "^0.5.64",
     "axios": "^0.21.1",
     "core-js": "^3.8.3",
     "push-dir": "^0.4.1"
