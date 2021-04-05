@@ -59,7 +59,7 @@ label {
 
 .scv-select {
   padding: 0.5em;
-  text-align: right;
+  text-align: left;
 }
 .scv-select:focus {
   box-shadow: -1 0 3pt 2pt var(--scv-focus-color-light);
